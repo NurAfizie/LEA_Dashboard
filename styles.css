@@ -262,6 +262,8 @@ h2 {
 
     box-shadow:
     0 4px 18px rgba(0,0,0,0.08);
+   
+   min-height: 400px;
 }
 
 canvas {
@@ -291,3 +293,15 @@ table {
     border-radius: 16px;
 
     overflow: hidden
+
+
+   #ordersTrendChart {
+
+height: 350px !important;
+}
+
+#statusChart {
+max-width: 450px;
+max-height: 300px;
+margin: auto;
+}
