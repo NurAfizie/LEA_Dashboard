@@ -132,36 +132,73 @@
 
 </div>
 
-    <script>
+  <script>
 new Chart(document.getElementById('ordersTrendChart'), {
     type: 'line',
     data: {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+        labels: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep'],
         datasets: [{
-            label: 'Orders',
-            data: [38, 42, 39, 55, 60, 58, 70, 85, 92],
+            label: 'LEA Orders',
+            data: [38,42,39,55,60,58,70,85,92],
             borderColor: '#2563eb',
-            backgroundColor: 'rgba(37,99,235,0.15)',
+            backgroundColor: 'rgba(37,99,235,0.25)',
+            borderWidth: 4,
+            pointRadius: 6,
+            pointHoverRadius: 8,
+            pointBackgroundColor: '#2563eb',
             fill: true,
             tension: 0.4
         }]
-    }
-});
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
 
-new Chart(document.getElementById('statusChart'), {
-    type: 'doughnut',
-    data: {
-        labels: ['Completed', 'Active', 'Pending', 'Escalated', 'Overdue'],
-        datasets: [{
-            data: [432, 102, 18, 11, 5],
-            backgroundColor: [
-                '#10b981',
-                '#f59e0b',
-                '#d97706',
-                '#7c3aed',
-                '#ef4444'
-            ]
-        }]
+        plugins: {
+            legend: {
+                position: 'top',
+                labels: {
+                    font: {
+                        size: 14,
+                        weight: 'bold'
+                    }
+                }
+            },
+
+            title: {
+                display: true,
+                text: 'Monthly LEA Orders Trend',
+                font: {
+                    size: 20,
+                    weight: 'bold'
+                }
+            }
+        },
+
+        scales: {
+            y: {
+                beginAtZero: true,
+                ticks: {
+                    font: {
+                        size: 12
+                    }
+                },
+                grid: {
+                    color: '#d5dbe5'
+                }
+            },
+
+            x: {
+                ticks: {
+                    font: {
+                        size: 12
+                    }
+                },
+                grid: {
+                    display: false
+                }
+            }
+        }
     }
 });
 </script>
