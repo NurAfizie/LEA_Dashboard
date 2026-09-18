@@ -1,101 +1,100 @@
-<!-- HEADER -->
-<div class="header">
+<!DOCTYPE html>
+<html lang="en">
 
-    <div class="header-left">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEA Orders Monitoring Dashboard</title>
 
-        <div class="logo">LEA</div>
+    <link rel="stylesheet" href="styles.css">
 
-        <div>
-            <h1>LEA Orders Monitoring Dashboard</h1>
-            <p>
-                Compliance Operations · Law Enforcement Orders Management · Investigation Tracking
-            </p>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+
+        <div class="header-left">
+
+            <div class="logo">LEA</div>
+
+            <div>
+                <h1>LEA Orders Monitoring Dashboard</h1>
+                <p>
+                    Compliance Operations · Law Enforcement Orders Management · Investigation Tracking
+                </p>
+            </div>
+
+        </div>
+
+        <div class="header-right">
+
+            <span class="badge green">✅ Data Loaded</span>
+            <span class="badge blue">📋 568 Orders</span>
+            <span class="badge purple">📅 18 Sep 2026</span>
+            <span class="badge orange">🔒 CONFIDENTIAL</span>
+
         </div>
 
     </div>
 
-    <div class="header-right">
+    <!-- FILTER PANEL -->
+    <div class="filter-panel">
 
-        <span class="badge green">✅ Data Loaded</span>
-        <span class="badge blue">📋 568 Orders</span>
-        <span class="badge purple">📅 18 Sep 2026</span>
-        <span class="badge orange">🔒 CONFIDENTIAL</span>
+        <input type="date">
+
+        <input type="date">
+
+        <select>
+            <option>All Agencies</option>
+            <option>PDRM</option>
+            <option>MACC</option>
+            <option>BNM</option>
+            <option>LHDN</option>
+            <option>Customs</option>
+        </select>
+
+        <select>
+            <option>All Order Types</option>
+            <option>Account Information Request</option>
+            <option>Production Order</option>
+            <option>Freezing Order</option>
+            <option>Transaction Record Request</option>
+        </select>
+
+        <select>
+            <option>All Status</option>
+            <option>Completed</option>
+            <option>Active</option>
+            <option>Pending Information</option>
+            <option>Escalated</option>
+            <option>Overdue</option>
+        </select>
+
+        <button class="btn-primary">Apply</button>
+        <button class="btn-secondary">Reset</button>
 
     </div>
 
-</div>
+    <!-- KPI SECTION -->
+    <div class="cards">
 
-<!-- FILTER -->
-<div class="filter-panel">
+        <div class="card blue-card">
+            <h3>Total LEA Orders</h3>
+            <div class="number">568</div>
+            <small>Orders Received</small>
+        </div>
 
-    <input type="date">
+        <div class="card green-card">
+            <h3>Completed Orders</h3>
+            <div class="number">432</div>
+            <small>76% Completion Rate</small>
+        </div>
 
-    <input type="date">
-
-    <select>
-        <option>All Agencies</option>
-        <option>PDRM</option>
-        <option>MACC</option>
-        <option>BNM</option>
-        <option>LHDN</option>
-    </select>
-
-    <select>
-        <option>All Order Types</option>
-        <option>Account Information Request</option>
-        <option>Production Order</option>
-        <option>Freezing Order</option>
-    </select>
-
-    <select>
-        <option>All Status</option>
-        <option>Active</option>
-        <option>Completed</option>
-        <option>Overdue</option>
-    </select>
-
-    <button class="btn-primary">Apply</button>
-    <button class="btn-secondary">Reset</button>
-
-</div>
-
-<!-- KPI -->
-<div class="cards">
-
-    <div class="card blue-card">
-        <h3>Total LEA Orders</h3>
-        <div class="number">568</div>
-        <small>Orders Received</small>
-    </div>
-
-    <div class="card green-card">
-        <h3>Completed Orders</h3>
-        <div class="number">432</div>
-        <small>76% Completion Rate</small>
-    </div>
-
-    <div class="card orange-card">
-        <h3>Active Orders</h3>
-        <div class="number">102</div>
-        <small>Under Processing</small>
-    </div>
-
-    <div class="card amber-card">
-        <h3>Pending Info</h3>
-        <div class="number">18</div>
-        <small>Awaiting Response</small>
-    </div>
-
-    <div class="card purple-card">
-        <h3>Escalated Orders</h3>
-        <div class="number">11</div>
-        <small>Management Review</small>
-    </div>
-
-    <div class="card red-card">
-        <h3>Overdue Orders</h3>
-        <div class="number">5</div>
-        <small>SLA Breached</small>
-    </div>
-
-</div>
+        <div class="card orange-card">
+            <h3>Active Orders</h3>
+            <div class="number">102</div>
+            <small>Under Processing</small>
+        </div>
