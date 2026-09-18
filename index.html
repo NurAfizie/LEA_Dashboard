@@ -158,8 +158,7 @@ new Chart(document.getElementById('ordersTrendChart'), {
 });
 
 
-/* Doughnut Chart */
-
+<script>
 new Chart(document.getElementById('statusChart'), {
     type: 'doughnut',
     data: {
@@ -178,13 +177,23 @@ new Chart(document.getElementById('statusChart'), {
                 '#d97706',
                 '#7c3aed',
                 '#ef4444'
-            ],
-            borderWidth: 2
+            ]
         }]
     },
     options: {
+
         responsive: true,
+
         plugins: {
+            title: {
+                display: true,
+                text: 'Current Order Distribution',
+                font: {
+                    size: 18,
+                    weight: 'bold'
+                }
+            },
+
             legend: {
                 position: 'top'
             }
