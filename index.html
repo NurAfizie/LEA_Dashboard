@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LEA Orders Monitoring Dashboard</title>
- 
+
     <link rel="stylesheet" href="styles.css">
- 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -17,7 +17,6 @@
     <div class="header">
 
         <div class="header-left">
-
             <div class="logo">LEA</div>
 
             <div>
@@ -26,16 +25,13 @@
                     Compliance Operations · Law Enforcement Orders Management · Investigation Tracking
                 </p>
             </div>
-
         </div>
 
         <div class="header-right">
-
             <span class="badge green">✅ Data Loaded</span>
             <span class="badge blue">📋 568 Orders</span>
             <span class="badge purple">📅 18 Sep 2026</span>
             <span class="badge orange">🔒 CONFIDENTIAL</span>
-
         </div>
 
     </div>
@@ -44,7 +40,6 @@
     <div class="filter-panel">
 
         <input type="date">
-
         <input type="date">
 
         <select>
@@ -78,172 +73,261 @@
 
     </div>
 
-   <!-- KPI SECTION -->
-<div class="cards">
+    <!-- KPI SECTION -->
 
-    <div class="card blue-card">
-        <h3>Total LEA Orders</h3>
-        <div class="number">568</div>
-        <small>Orders Received</small>
+    <div class="cards">
+
+        <div class="card blue-card">
+            <h3>Total LEA Orders</h3>
+            <div class="number">568</div>
+            <small>Orders Received</small>
+        </div>
+
+        <div class="card green-card">
+            <h3>Completed Orders</h3>
+            <div class="number">432</div>
+            <small>76% Completion Rate</small>
+        </div>
+
+        <div class="card orange-card">
+            <h3>Active Orders</h3>
+            <div class="number">102</div>
+            <small>Under Processing</small>
+        </div>
+
+        <div class="card amber-card">
+            <h3>Pending Information</h3>
+            <div class="number">18</div>
+            <small>Awaiting Response</small>
+        </div>
+
+        <div class="card purple-card">
+            <h3>Escalated Orders</h3>
+            <div class="number">11</div>
+            <small>Management Review</small>
+        </div>
+
+        <div class="card red-card">
+            <h3>Overdue Orders</h3>
+            <div class="number">5</div>
+            <small>SLA Breached</small>
+        </div>
+
     </div>
 
-    <div class="card green-card">
-        <h3>Completed Orders</h3>
-        <div class="number">432</div>
-        <small>76% Completion Rate</small>
-    </div>
+    <!-- TREND CHART -->
 
-    <div class="card orange-card">
-        <h3>Active Orders</h3>
-        <div class="number">102</div>
-        <small>Under Processing</small>
-    </div>
-
-    <div class="card amber-card">
-        <h3>Pending Information</h3>
-        <div class="number">18</div>
-        <small>Awaiting Response</small>
-    </div>
-
-    <div class="card purple-card">
-        <h3>Escalated Orders</h3>
-        <div class="number">11</div>
-        <small>Management Review</small>
-    </div>
-
-    <div class="card red-card">
-        <h3>Overdue Orders</h3>
-        <div class="number">5</div>
-        <small>SLA Breached</small>
-    </div>
-    
- </div>
-    
     <h2>Monthly LEA Orders Trend</h2>
 
-<div class="chart-container">
-    <canvas id="ordersTrendChart"></canvas>
-</div>
-
-<h2>Orders Status Distribution</h2>
-
-<div class="chart-container">
-    <canvas id="statusChart"></canvas>
-</div>
-
-<!-- ADD AGENCY BREAKDOWN HERE -->
-
-<h2>Agency Breakdown</h2>
-
-<div class="cards">
-
-    <div class="card blue-card">
-        <h3>PDRM</h3>
-        <div class="number">204</div>
-        <small>186 Completed</small>
+    <div class="chart-container">
+        <canvas id="ordersTrendChart"></canvas>
     </div>
 
-    <div class="card green-card">
-        <h3>MACC</h3>
-        <div class="number">88</div>
-        <small>75 Completed</small>
+    <!-- STATUS CHART -->
+
+    <h2>Orders Status Distribution</h2>
+
+    <div class="chart-container">
+        <canvas id="statusChart"></canvas>
     </div>
 
-    <div class="card orange-card">
-        <h3>BNM</h3>
-        <div class="number">62</div>
-        <small>54 Completed</small>
+    <!-- AGENCY BREAKDOWN -->
+
+    <h2>Agency Breakdown</h2>
+
+    <div class="cards">
+
+        <div class="card blue-card">
+            <h3>PDRM</h3>
+            <div class="number">204</div>
+            <small>186 Completed</small>
+        </div>
+
+        <div class="card green-card">
+            <h3>MACC</h3>
+            <div class="number">88</div>
+            <small>75 Completed</small>
+        </div>
+
+        <div class="card orange-card">
+            <h3>BNM</h3>
+            <div class="number">62</div>
+            <small>54 Completed</small>
+        </div>
+
+        <div class="card purple-card">
+            <h3>LHDN</h3>
+            <div class="number">95</div>
+            <small>81 Completed</small>
+        </div>
+
+        <div class="card red-card">
+            <h3>Customs</h3>
+            <div class="number">53</div>
+            <small>47 Completed</small>
+        </div>
+
+        <div class="card amber-card">
+            <h3>Others</h3>
+            <div class="number">66</div>
+            <small>53 Completed</small>
+        </div>
+
     </div>
 
-    <div class="card purple-card">
-        <h3>LHDN</h3>
-        <div class="number">95</div>
-        <small>81 Completed</small>
-    </div>
+    <!-- INVESTIGATOR PRODUCTIVITY -->
 
-    <div class="card red-card">
-        <h3>Customs</h3>
-        <div class="number">53</div>
-        <small>47 Completed</small>
-    </div>
-
-    <div class="card amber-card">
-        <h3>Others</h3>
-        <div class="number">66</div>
-        <small>53 Completed</small>
-    </div>
-
-</div>
     <h2>Investigator Productivity</h2>
 
- <script>
-/* Monthly Trend */
+    <table>
 
-new Chart(document.getElementById('ordersTrendChart'), {
-    type: 'line',
-    data: {
-        labels: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep'],
-        datasets: [{
-            label: 'LEA Orders',
-            data: [38,42,39,55,60,58,70,85,92],
-            borderColor: '#2563eb',
-            backgroundColor: 'rgba(37,99,235,0.25)',
-            borderWidth: 4,
-            pointRadius: 6,
-            pointBackgroundColor: '#2563eb',
-            fill: true,
-            tension: 0.4
-        }]
-    },
-    options: {
-        responsive: true,
-        maintainAspectRatio: false
-    }
-});
+        <tr>
+            <th>Investigator</th>
+            <th>Assigned Orders</th>
+            <th>Completed Orders</th>
+            <th>Open Orders</th>
+            <th>Escalated Orders</th>
+            <th>Average TAT</th>
+        </tr>
 
-new Chart(document.getElementById('statusChart'), {
-    type: 'doughnut',
-    data: {
-        labels: [
-            'Completed',
-            'Active',
-            'Pending',
-            'Escalated',
-            'Overdue'
-        ],
-        datasets: [{
-            data: [432,102,18,11,5],
-            backgroundColor: [
-                '#10b981',
-                '#f59e0b',
-                '#d97706',
-                '#7c3aed',
-                '#ef4444'
-            ]
-        }]
-    },
-    options: {
+        <tr>
+            <td>Afizie</td>
+            <td>130</td>
+            <td>120</td>
+            <td>8</td>
+            <td>2</td>
+            <td>4.2 Days</td>
+        </tr>
 
-        responsive: true,
+        <tr>
+            <td>Officer A</td>
+            <td>115</td>
+            <td>108</td>
+            <td>5</td>
+            <td>2</td>
+            <td>3.8 Days</td>
+        </tr>
 
-        plugins: {
-            title: {
-                display: true,
-                text: 'Current Order Distribution',
-                font: {
-                    size: 18,
-                    weight: 'bold'
-                }
+        <tr>
+            <td>Officer B</td>
+            <td>122</td>
+            <td>112</td>
+            <td>8</td>
+            <td>2</td>
+            <td>4.5 Days</td>
+        </tr>
+
+    </table>
+
+    <!-- AI BENEFITS -->
+
+    <h2>AI Automation Benefits</h2>
+
+    <div class="ai-section">
+
+        <div class="ai-card">
+            <h3>Orders Reviewed by AI</h3>
+            <div class="number">280</div>
+        </div>
+
+        <div class="ai-card">
+            <h3>Narratives Generated</h3>
+            <div class="number">265</div>
+        </div>
+
+        <div class="ai-card">
+            <h3>Hours Saved</h3>
+            <div class="number">125</div>
+        </div>
+
+        <div class="ai-card">
+            <h3>Productivity Improvement</h3>
+            <div class="number">35%</div>
+        </div>
+
+    </div>
+
+    <!-- CHARTS -->
+
+    <script>
+
+        new Chart(document.getElementById('ordersTrendChart'), {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+                datasets: [{
+                    label: 'LEA Orders',
+                    data: [45, 52, 48, 65, 72, 68, 81, 95, 104],
+                    borderColor: '#2563eb',
+                    backgroundColor: 'rgba(37,99,235,0.25)',
+                    borderWidth: 4,
+                    pointRadius: 6,
+                    pointHoverRadius: 8,
+                    pointBackgroundColor: '#2563eb',
+                    fill: true,
+                    tension: 0.4
+                }]
             },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
 
-            legend: {
-                position: 'top'
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Monthly LEA Orders Trend',
+                        font: {
+                            size: 18,
+                            weight: 'bold'
+                        }
+                    }
+                }
             }
-        }
-    }
-});
-</script>
-        
-        </body>
+        });
 
-        </html>
+        new Chart(document.getElementById('statusChart'), {
+            type: 'doughnut',
+            data: {
+                labels: [
+                    'Completed',
+                    'Active',
+                    'Pending',
+                    'Escalated',
+                    'Overdue'
+                ],
+                datasets: [{
+                    data: [432, 102, 18, 11, 5],
+                    backgroundColor: [
+                        '#10b981',
+                        '#f59e0b',
+                        '#d97706',
+                        '#7c3aed',
+                        '#ef4444'
+                    ]
+                }]
+            },
+            options: {
+                responsive: true,
+                cutout: '65%',
+
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Current Order Distribution',
+                        font: {
+                            size: 18,
+                            weight: 'bold'
+                        }
+                    },
+                    legend: {
+                        position: 'top'
+                    }
+                }
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
