@@ -263,7 +263,12 @@ h2 {
     box-shadow:
     0 4px 18px rgba(0,0,0,0.08);
    
-   min-height: 400px;
+   width: calc(100% - 40px);
+}
+
+#ordersTrendChart {
+width: 100% !important;
+height: 450px !important;
 }
 
 canvas {
