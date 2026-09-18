@@ -1,0 +1,78 @@
+.header{
+    background:#112f5f;
+    color:white;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    width:70px;
+    height:70px;
+    border-radius:15px;
+    background:#2563eb;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+    font-size:24px;
+}
+
+.header-left{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.badge{
+    padding:8px 15px;
+    border-radius:20px;
+    color:white;
+    margin-left:8px;
+}
+
+.green{background:#10b981;}
+.blue{background:#2563eb;}
+.orange{background:#f59e0b;}
+.purple{background:#7c3aed;}
+.red{background:#ef4444;}
+.amber{background:#d97706;}
+
+.filter-panel{
+    background:white;
+    padding:20px;
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    margin:20px;
+    border-radius:12px;
+    box-shadow:0 3px 8px rgba(0,0,0,0.08);
+}
+
+.filter-panel input,
+.filter-panel select{
+    padding:10px;
+    border-radius:8px;
+    border:1px solid #ddd;
+}
+
+.btn-primary{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+}
+
+.btn-secondary{
+    background:#64748b;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+}
+
+.amber-card{
+    border-left:6px solid #d97706;
+}
