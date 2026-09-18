@@ -256,14 +256,13 @@ h2 {
 
     margin: 20px;
 
-    padding: 30px;
+    padding: 20px;
 
     border-radius: 18px;
 
     box-shadow:
     0 4px 18px rgba(0,0,0,0.08);
    
-   width: calc(100% - 40px);
 }
 
 #ordersTrendChart {
@@ -276,7 +275,7 @@ canvas {
 }
 
 #statusChart {
-    max-width: 550px;
+    max-width: 600px;
     max-height: 350px;
     margin: auto;
 }
@@ -300,13 +299,13 @@ table {
     overflow: hidden
 
 
-   #ordersTrendChart {
-
-height: 350px !important;
+#ordersTrendChart {
+width: 100% !important;
+height: 450px !important;
 }
 
 #statusChart {
-max-width: 450px;
+max-width: 600px;
 max-height: 300px;
 margin: auto;
 }
