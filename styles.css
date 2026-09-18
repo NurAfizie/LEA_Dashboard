@@ -203,28 +203,66 @@ h2 {
    CHARTS
 ========================= */
 
-.chart-container {
-    background: white;
+.chart-grid {
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 20px;
+
     margin: 20px;
+}
+
+.chart-container {
+
+    background: white;
+
     padding: 25px;
+
     border-radius: 18px;
+
     box-shadow: 0 4px 18px rgba(0,0,0,0.08);
 }
 
+.chart-container h2 {
+
+    margin-top: 0;
+
+    margin-bottom: 20px;
+
+    color: #334155;
+
+    font-size: 24px;
+}
+
 #ordersTrendChart {
+
     width: 100% !important;
-    height: 400px !important;
+
+    height: 380px !important;
 }
 
 #statusChart {
-    width: 600px !important;
-    height: 350px !important;
-    margin: auto;
-    display: block;
+
+    width: 100% !important;
+
+    height: 380px !important;
 }
 
 canvas {
     width: 100% !important;
+}
+
+/* Mobile */
+
+@media (max-width: 1024px) {
+
+    .chart-grid {
+
+        grid-template-columns: 1fr;
+    }
+
 }
 
 /* =========================
