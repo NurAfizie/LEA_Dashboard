@@ -257,80 +257,93 @@
 
     <script>
 
-        new Chart(document.getElementById('ordersTrendChart'), {
-            type: 'line',
-            data: {
-                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
-                datasets: [{
-                    label: 'LEA Orders',
-                    data: [45, 52, 48, 65, 72, 68, 81, 95, 104],
-                    borderColor: '#2563eb',
-                    backgroundColor: 'rgba(37,99,235,0.25)',
-                    borderWidth: 4,
-                    pointRadius: 6,
-                    pointHoverRadius: 8,
-                    pointBackgroundColor: '#2563eb',
-                    fill: true,
-                    tension: 0.4
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
+new Chart(document.getElementById('ordersTrendChart'), {
+    type: 'line',
+    data: {
+        labels: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep'],
+        datasets: [{
+            label: 'LEA Orders',
+            data: [45,52,48,65,72,68,81,95,104],
+            borderColor: '#2563eb',
+            backgroundColor: 'rgba(37,99,235,0.15)',
+            borderWidth: 4,
+            pointRadius: 6,
+            pointHoverRadius: 8,
+            pointBackgroundColor: '#2563eb',
+            fill: true,
+            tension: 0.4
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
 
-                plugins: {
-                    title: {
-                        display: true,
-                        text: 'Monthly LEA Orders Trend',
-                        font: {
-                            size: 18,
-                            weight: 'bold'
-                        }
-                    }
+        plugins: {
+            title: {
+                display: true,
+                text: 'Monthly LEA Orders Trend',
+                color: '#1e293b',
+                font: {
+                    size: 20,
+                    weight: 'bold'
                 }
             }
-        });
+        }
+    }
+});
 
-        new Chart(document.getElementById('statusChart'), {
-            type: 'doughnut',
-            data: {
-                labels: [
-                    'Completed',
-                    'Active',
-                    'Pending',
-                    'Escalated',
-                    'Overdue'
-                ],
-                datasets: [{
-                    data: [432, 102, 18, 11, 5],
-                    backgroundColor: [
-                        '#10b981',
-                        '#f59e0b',
-                        '#d97706',
-                        '#7c3aed',
-                        '#ef4444'
-                    ]
-                }]
+new Chart(document.getElementById('statusChart'), {
+    type: 'doughnut',
+    data: {
+        labels: [
+            'Completed',
+            'Active',
+            'Pending',
+            'Escalated',
+            'Overdue'
+        ],
+        datasets: [{
+            data: [432,102,18,11,5],
+            backgroundColor: [
+                '#10b981',
+                '#f59e0b',
+                '#d97706',
+                '#7c3aed',
+                '#ef4444'
+            ]
+        }]
+    },
+    options: {
+
+        responsive: true,
+        maintainAspectRatio: false,
+        cutout: '55%',
+
+        plugins: {
+
+            title: {
+                display: true,
+                text: 'Current Order Distribution',
+                color: '#1e293b',
+                font: {
+                    size: 20,
+                    weight: 'bold'
+                }
             },
-            options: {
-                responsive: true,
-                cutout: '65%',
 
-                plugins: {
-                    title: {
-                        display: true,
-                        text: 'Current Order Distribution',
-                        font: {
-                            size: 18,
-                            weight: 'bold'
-                        }
+            legend: {
+                position: 'bottom',
+                labels: {
+                    font: {
+                        size: 14,
+                        weight: 'bold'
                     },
-                    legend: {
-                        position: 'top'
-                    }
+                    padding: 15
                 }
             }
-        });
+        }
+    }
+});
 
     </script>
 
