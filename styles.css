@@ -251,18 +251,11 @@ h2 {
 ========================= */
 
 .chart-container {
-
     background: white;
-
     margin: 20px;
-
     padding: 20px;
-
     border-radius: 18px;
-
-    box-shadow:
-    0 4px 18px rgba(0,0,0,0.08);
-   
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
 }
 
 #ordersTrendChart {
@@ -305,7 +298,7 @@ height: 450px !important;
 }
 
 #statusChart {
-max-width: 600px;
-max-height: 300px;
-margin: auto;
+    width: 700px !important;
+    height: 400px !important;
+    margin: auto;
 }
